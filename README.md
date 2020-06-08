@@ -12,31 +12,33 @@ This part of the 'Live training Spec' process is designed to help guide you thro
 
 ### A. What problem(s) will students learn how to solve? (minimum of 5 problems)
 
-> _Here's an example from the Python for Spreadsheeets Users live session_
->
-> - Key considerations to take in when transitioning from spreadsheets to Python.
-> - The Data Scientist mindset and keys to success in transitioning to Python.
-> - How to import `.xlsx` and `.csv` files into Python using `pandas`.
-> - How to filter a DataFrame using `pandas`.
-> - How to create new columns out of your DataFrame for more interesting features.
-> - Perform exploratory analysis of a DataFrame in `pandas`.
-> - How to clean a DataFrame using `pandas` to make it ready for analysis.
-> - Apply common spreadsheets operations such as pivot tables and vlookups in Python using `pandas`.
-> - Create simple, interesting visualizations using `matplotlib`.
+> - Understand different ways of performing brand analysis from tweet texts
+> - How to compare brand popularity by extracting and comparing follower counts
+> - How to promote a brand by identifying popular tweets
+> - How to evaluate brand salience and compare the same for two brands using tweet frequencies
+> - Understand brand perception through text mining and by visualizing key terms
+> - Perform sentiment analysis of tweets to understand customer's feelings and sentiments about the brand
+> - Visualize brand presence by plotting tweets on the map
 
 
 ### B. What technologies, packages, or functions will students use? Please be exhaustive.
 
-> - pandas
-> - matplotlib
-> - seaborn
+> - rtweet
+> - dplyr
+> - reshape
+> - ggplot2
+> - qdapRegex
+> - tm
+> - qdap
+> - wordcloud
+> - RColorBrewer
+> - syuzhet
+> - maps
 
 ### C. What terms or jargon will you define?
 
 _Whether during your opening and closing talk or your live training, you might have to define some terms and jargon to walk students through a problem you’re solving. Intuitive explanations using analogies are encouraged._
 
-> _Here's an example from the [Python for Spreadsheeets Users live session](https://www.datacamp.com/resources/webinars/live-training-python-for-spreadsheet-users)._
-> 
 > - Packages: Packages are pieces of software we can import to Python. Similar to how we download, install Excel on MacOs, we import pandas on Python. (You can find it at minute 6:30)
 
 ### D. What mistakes or misconceptions do you expect? 
