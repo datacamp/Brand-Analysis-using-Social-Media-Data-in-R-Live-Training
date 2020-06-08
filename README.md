@@ -126,7 +126,6 @@ A live training session usually begins with an introductory presentation, follow
 >   - Power of social media data
 >   - Importance of brand analysis
 >   - Why use social media data for brand analysis
->   - The powerful rtweet() library in R
 >   - Understand different ways of performing brand analysis from tweet texts
 >   - Outline the methods that will be covered in live training
 >
@@ -158,27 +157,28 @@ A live training session usually begins with an introductory presentation, follow
 > - Stack the tweet frequency columns using `melt()` and view the output
 > - Compare brand salience by plotting the frequency of tweets for the two brands using `ggplot()`
 > #### Understand brand perception through text mining and by visualizing key terms
-> -  a) Process twitter text
+> -  **a) Process twitter text**
 >   - Import the library library `qdapRegex()`
 >   - Extract tweet text from the `text` column in the tweet dataframe
 >   - Remove URLs from the tweet text using `rm_twitter_url()`
 >   - using `gsub()`, replace special characters, punctuation, & numbers with spaces
-> -  b) Convert processed text to a Corpus
+> -  **b) Convert processed text to a Corpus**
 >   - Under markdown, define: corpus and stopwords
 >   - Load the libraries `tm()` and `dplyr()`
 >   - Convert processed text to a text corpus using `VectorSource()` and `Corpus()`
 >   - Convert the corpus to lowercase with `tm_map()`
 >   - Remove English stop words from the corpus using `tm_map()` and `stopwords()`
 >   - Using `tm_map()` and `stripWhitespace()`, remove additional spaces from the corpus
-> -  c) Remove custom stop words from Corpus
+> -  **c) Remove custom stop words from Corpus**
 >   - Under markdown, define: custom stopwords
 >   - Extract term frequencies for top 60 words using `freq_terms()`
 >   - Create a vector of custom stop words
 >   - Remove custom stop words to create a refined corpus using `tm_map()`
-> -  d) Visualize popular terms in the Corpus
+> -  **d) Visualize popular terms in the Corpus**
 >   - Visualize the key terms with bar plots created with `ggplot()`
 >   - Load libraries `wordcloud()` and `RColorBrewer()`
 >   - Create word cloud of popular terms using `wordcloud()`
+> - **Q&A**
 > #### Perform sentiment analysis of tweets
 > -  Load the library `syuzhet()`
 > -  Extract sentiment scores using `get_nrc_sentiment()`
@@ -191,6 +191,7 @@ A live training session usually begins with an introductory presentation, follow
 > -  Use `na.omit()` to omit rows with missing geo-coordinates in the dataframe
 > -  Load the library `maps()`
 > -  Using `map()` and `with()` functions, plot longitude and latitude values of tweets on the world map
+> - **Q&A**
 >
 > ### Ending slides
 > -  Recap of what we learned
