@@ -78,40 +78,48 @@ Terms like "beginner" and "expert" mean different things to different people, so
 
 *Check all that apply.*
 
-- [ ] Data Consumer
-- [ ] Leader 
-- [ ] Data Analyst
-- [ ] Citizen Data Scientist
-- [ ] Data Scientist
+- [X] Data Consumer
+- [X] Leader 
+- [X] Data Analyst
+- [X] Citizen Data Scientist
+- [X] Data Scientist
 - [ ] Data Engineer
 - [ ] Database Administrator
 - [ ] Statistician
 - [ ] Machine Learning Scientist
-- [ ] Programmer
+- [X] Programmer
 - [ ] Other (please describe)
 
 ### What industries would this apply to?
 
 *List one or more industries that the content would be appropriate for.*
 
+> - Retail marketing
+> - Customer experience and engagement
+> - E-commerce
 
 ### What level of expertise should learners have before beginning the live training?
 
 *List three or more examples of skills that you expect learners to have before beginning the live training*
 
-> - Can draw common plot types (scatter, bar, histogram) using matplotlib and interpret them
-> - Can run a linear regression, use it to make predictions, and interpret the coefficients.
-> - Can calculate grouped summary statistics using SELECT queries with GROUP BY clauses.
+> - Basic knowledge of Twitter and tweets
+> - Working knowledge of R
+> - Can draw common plot types (barplots) using ggplot and interpret them
+
 
 
 ## Step 3: Prerequisites
 
 List any prerequisite courses you think your live training could use from. This could be the live session’s companion course or a course you think students should take before the session. Prerequisites act as a guiding principle for your session and will set the topic framework, but you do not have to limit yourself in the live session to the syntax used in the prerequisite courses.
 
+> - Working knowledge of R. The course **Introduction to R** on DataCamp can be considered as a prerequisite
+
 
 ## Step 4: Session Outline
 
 A live training session usually begins with an introductory presentation, followed by the live training itself, and an ending presentation. Your live session is expected to be around 2h30m-3h long (including Q&A) with a hard-limit at 3h30m. You can check out our live training content guidelines [here](_LINK_). 
+
+
 
 
 > _Example from [Python for Spreadsheet Users](https://www.datacamp.com/resources/webinars/live-training-python-for-spreadsheet-users)_
