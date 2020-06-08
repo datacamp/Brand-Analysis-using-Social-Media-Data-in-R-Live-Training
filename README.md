@@ -39,16 +39,21 @@ This part of the 'Live training Spec' process is designed to help guide you thro
 
 _Whether during your opening and closing talk or your live training, you might have to define some terms and jargon to walk students through a problem you’re solving. Intuitive explanations using analogies are encouraged._
 
-> - Packages: Packages are pieces of software we can import to Python. Similar to how we download, install Excel on MacOs, we import pandas on Python. (You can find it at minute 6:30)
+> - Time series data: Time series represents a series of data points sequentially indexed over time.  Analyzing time series data helps visualize the frequency of tweets over time.
+
+> - Brand salience: It is the extent to which a brand is spoken about for which volume of tweets posted on the brand is a strong indicator.
+
+> - Corpus: A corpus is a list of text documents and is the starting point for various text processing functions.
+
+> - Sentiment analysis: Sentiment analysis is the process of retrieving information about a consumer's perception of a product or brand. It is used to extract and quantify positive, negative, and neutral opinions as well as emotions like trust, joy, and anger from the text.
+
 
 ### D. What mistakes or misconceptions do you expect? 
 
 _To help minimize the amount of Q&As and make your live training re-usable, list out some mistakes and misconceptions you think students might encounter along the way._
 
-> _Here's an example from the [Data Visualization in Python live session](https://www.datacamp.com/resources/webinars/data-visualization-in-python)_
-> 
-> - Anatomy of a matplotlib figure: When calling a matplotlib plot, a figure, axes and plot is being created behind the background. (You can find it at minute 11)
-> - As long as you do understand how plots work behind the scenes, you don't need to memorize syntax to customize your plot. 
+> - Participants might expect to extract live feeds from twitter during the session. We will make it clear that it involves a setup process and the training session will use pre-saved datasets only that contain extracted tweets.
+
 
 ### E. What datasets will you use? 
 
@@ -57,6 +62,10 @@ As a rule of thumb, your dataset should always answer yes to the following quest
 > Is the dataset/problem I’m working on, something an industry data scientist/analyst could work on? 
 
 Check our [datasets to avoid](https://instructor-support.datacamp.com/en/articles/2360699-datasets-to-avoid) list. 
+
+> -  Tweets on 'tesla' pre-extracted from Twitter
+> -  Tweets on 'toyota' pre-extracted from Twitter
+> -  Tweets on 'electric car' pre-extracted from Twitter
 
 ## Step 2: Who is this session for?
 
