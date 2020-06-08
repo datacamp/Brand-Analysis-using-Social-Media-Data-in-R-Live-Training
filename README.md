@@ -119,42 +119,84 @@ List any prerequisite courses you think your live training could use from. This 
 
 A live training session usually begins with an introductory presentation, followed by the live training itself, and an ending presentation. Your live session is expected to be around 2h30m-3h long (including Q&A) with a hard-limit at 3h30m. You can check out our live training content guidelines [here](_LINK_). 
 
-
-
-
-> _Example from [Python for Spreadsheet Users](https://www.datacamp.com/resources/webinars/live-training-python-for-spreadsheet-users)_
 >
 > ### Introduction Slides 
 > - Introduction to the webinar and instructor (led by DataCamp TA)
 > - Introduction to the topics
->   - Discuss need to become data fluent
->   - Define data fluency
->   - Discuss how learning Python fits into that and go over session outline
->   - Set expectations about Q&A
+>   - Power of social media data
+>   - Importance of brand analysis
+>   - Why use social media data for brand analysis
+>   - The powerful rtweet() library in R
+>   - Understand different ways of performing brand analysis from tweet texts
+>   - Outline the methods that will be covered in live training
 >
 > ### Live Training
-> #### Exploratory Data Analysis
-> - Import data and print header of DataFrame `pd.read_excel()`, `.head()`
-> - Glimpse at the data to
->   - Get column types using `.dtypes`
->   - Use `.describe()`, `.info()`
+> #### Dataset exploration
+> - Load the library `rtweet()` 
+> - Explain usage of `search_tweets()` for extracting live tweets (function not to be executed)
+> - Import the dataset with extracted tweets using `readRDS()`
+> - Check number of rows and columns in the tweet dataframe
+> - View the dataframe of tweets
 > - **Q&A** 
-> #### Data Cleaning and making it ready for analysis
-> - Convert date columns to datetime `pd.to_datetime()`
-> - Change column names
-> - Extract year, month from datetime `.strftime()`
-> - Drop an irrelevant column `.drop()`
-> - Fill missing values with `.fillna()`
-> #### Creating a report
-> - First report question: What is our overall sales performance this year? `.groupby()`, `.plt.plot()`
-> - Second report question: What is our overall sales performance this year? `.merge()`, `.groupby()`, `plt.plot()`
-> - Third report question: What is our overall sales performance this year? `.merge()`, `.groupby()`, `plt.plot()`
+> #### Compare brand popularity by extracting and comparing follower counts
+> - Use `lookup_users()` to collect data on follower counts
+> - Under markdown, define: `screen_name`, `followers_count`
+> - Extract screen names and follower counts into a dataframe to view results
+> #### Promote a brand by identifying popular tweets using retweet counts
+> - Extract columns `text` and `retweet_count` from tweet dataframe
+> - Sort in descending order of retweet counts using `arrange()`
+> - Exclude rows with duplicate text using `unique()`
+> - Remove the rownames and view the top 6 unique posts
 > - **Q&A**
+> #### Evaluate brand salience and compare the same for two brands using tweet frequencies
+> - Under markdown, define: time series and brand salience
+> - create a time series plot using `ts_plot()`
+> - Import extracted tweets of another brand using `readRDS()` and view the tweet dataframe
+> - Create time series objects for the two brands using `ts_data()`
+> - load the libraries `reshape()` and `ggplot2()`
+> - With `merge()`, merge the time series objects with `time` as the common column
+> - Stack the tweet frequency columns using `melt()` and view the output
+> - Compare brand salience by plotting the frequency of tweets for the two brands using `ggplot()`
+> #### Understand brand perception through text mining and by visualizing key terms
+> -  a) Process twitter text
+>   - Import the library library `qdapRegex()`
+>   - Extract tweet text from the `text` column in the tweet dataframe
+>   - Remove URLs from the tweet text using `rm_twitter_url()`
+>   - using `gsub()`, replace special characters, punctuation, & numbers with spaces
+> -  b) Convert processed text to a Corpus
+>   - Under markdown, define: corpus and stopwords
+>   - Load the libraries `tm()` and `dplyr()`
+>   - Convert processed text to a text corpus using `VectorSource()` and `Corpus()`
+>   - Convert the corpus to lowercase with `tm_map()`
+>   - Remove English stop words from the corpus using `tm_map()` and `stopwords()`
+>   - Using `tm_map()` and `stripWhitespace()`, remove additional spaces from the corpus
+> -  c) Remove custom stop words from Corpus
+>   - Under markdown, define: custom stopwords
+>   - Extract term frequencies for top 60 words using `freq_terms()`
+>   - Create a vector of custom stop words
+>   - Remove custom stop words to create a refined corpus using `tm_map()`
+> -  d) Visualize popular terms in the Corpus
+>   - Visualize the key terms with bar plots created with `ggplot()`
+>   - Load libraries `wordcloud()` and `RColorBrewer()`
+>   - Create word cloud of popular terms using `wordcloud()`
+> #### Perform sentiment analysis of tweets
+> -  Load the library `syuzhet()`
+> -  Extract sentiment scores using `get_nrc_sentiment()`
+> -  Use `colSums()` to calculate sum of sentiment scores
+> -  Convert row names into 'sentiment' column and combine with sentiment scores using `cbind()`
+> -  Plot and interpret the sentiment scores using `ggplot()`
+> #### Visualize brand presence by plotting tweets on the map
+> -  Import the extracted tweets on "electric vehicle" using `readRDS()`
+> -  Extract geo-coordinates data to append as new columns using `lat_lng()`
+> -  Use `na.omit()` to omit rows with missing geo-coordinates in the dataframe
+> -  Load the library `maps()`
+> -  Using `map()` and `with()` functions, plot longitude and latitude values of tweets on the world map
 >
 > ### Ending slides
-> - Recap of what we learned
-> - The data science mindset
-> - Call to action and course recommendations
+> -  Recap of what we learned
+> -  What other brand analysis can be done using the tweets?
+> -  Where else can you apply what we learned
+> -  Call to action and course recommendations
 
 ## Authoring your session
 
