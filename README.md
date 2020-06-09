@@ -128,6 +128,7 @@ A live training session usually begins with an introductory presentation, follow
 >   - Why use social media data for brand analysis
 >   - Understand different ways of performing brand analysis from tweet texts
 >   - Outline the methods that will be covered in live training
+> - **Q&A** 
 >
 > ### Live Training
 > #### Dataset exploration
@@ -141,6 +142,7 @@ A live training session usually begins with an introductory presentation, follow
 > - Use `lookup_users()` to collect data on follower counts
 > - Under markdown, define: `screen_name`, `followers_count`
 > - Extract screen names and follower counts into a dataframe to view results
+> - **Q&A** 
 > #### Promote a brand by identifying popular tweets using retweet counts
 > - Extract columns `text` and `retweet_count` from tweet dataframe
 > - Sort in descending order of retweet counts using `arrange()`
@@ -156,6 +158,7 @@ A live training session usually begins with an introductory presentation, follow
 > - With `merge()`, merge the time series objects with `time` as the common column
 > - Stack the tweet frequency columns using `melt()` and view the output
 > - Compare brand salience by plotting the frequency of tweets for the two brands using `ggplot()`
+> - **Q&A** 
 > #### Understand brand perception through text mining and by visualizing key terms
 > -  **a) Process twitter text**
 >   - Import the library library `qdapRegex()`
@@ -185,6 +188,7 @@ A live training session usually begins with an introductory presentation, follow
 > -  Use `colSums()` to calculate sum of sentiment scores
 > -  Convert row names into 'sentiment' column and combine with sentiment scores using `cbind()`
 > -  Plot and interpret the sentiment scores using `ggplot()`
+> - **Q&A** 
 > #### Visualize brand presence by plotting tweets on the map
 > -  Import the extracted tweets on "electric vehicle" using `readRDS()`
 > -  Extract geo-coordinates data to append as new columns using `lat_lng()`
@@ -198,6 +202,7 @@ A live training session usually begins with an introductory presentation, follow
 > -  What other brand analysis can be done using the tweets?
 > -  Where else can you apply what we learned
 > -  Call to action and course recommendations
+> - **Q&A** 
 
 ## Authoring your session
 
